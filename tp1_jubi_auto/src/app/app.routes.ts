@@ -9,5 +9,21 @@ export const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },   {
+    path: 'vehicule',
+    loadComponent: () => import('./vue/vehicule/vehicule.page').then( m => m.VehiculePage)
   },
+  {
+    path: 'trajet',
+    loadComponent: () => import('./vue/trajet/trajet.page').then( m => m.TrajetPage)
+  },
+  {
+    path: 'propos',
+    loadComponent: () => import('./vue/propos/propos.page').then( m => m.ProposPage)
+  },
+  {
+    path: 'parametre',
+    loadComponent: () => import('./vue/parametre/parametre.page').then( m => m.ParametrePage)
+  }
+ 
 ];

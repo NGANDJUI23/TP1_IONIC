@@ -1,4 +1,21 @@
 <ion-app>
-  <ion-menu contentId="main-menu"></ion-menu>
-  <ion-router-outlet id="main-menu"></ion-router-outlet>
+  <!-- <ion-split-pane when = "xxl" contentId="main-content"> -->
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-menu-toggle auto-hide="false">
+          <ion-list>
+            <ion-item [routerLink]="['home']">Dashboard</ion-item>
+            <ion-item [routerLink]="['parametre']">Paramettre</ion-item>
+            <ion-item routerLink="/quit">Quitter l'application</ion-item>
+          </ion-list>
+        </ion-menu-toggle>
+      </ion-content>
+    </ion-menu>
+  <!-- </ion-split-pane> -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>
