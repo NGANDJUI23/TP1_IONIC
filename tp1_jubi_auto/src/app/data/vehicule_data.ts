@@ -2,51 +2,51 @@ import { Vehicle } from "../model/model_vehicule";
 
 export const vehicles: Vehicle[] = [
   {
-    licensePlate: "lt0998c",
-    brand: "renault",
-    color: "bleu",
-    transmission: "semi-auto",
-    owner: "kaiboy",
+    matricule: "lt0998c",
+    marque: "renault",
+    couleur: "bleu",
+    type_moteur: "semi-auto",
+    nom_chauffeur: "kaiboy",
     model: "326"
   },
   {
-    licensePlate: "ce300mu",
-    brand: "peugeot",
-    color: "rouge",
-    transmission: "manuel",
-    owner: "bosco",
+    matricule: "ce300mu",
+    marque: "peugeot",
+    couleur: "rouge",
+    type_moteur: "manuel",
+    nom_chauffeur: "bosco",
     model: "306"
   },
   {
-    licensePlate: "ce1230k",
-    brand: "mercedes",
-    color: "jaune",
-    transmission: "manuel",
-    owner: "pascal",
+    matricule: "ce1230k",
+    marque: "mercedes",
+    couleur: "jaune",
+    type_moteur: "manuel",
+    nom_chauffeur: "pascal",
     model: "benz"
   },
   {
-    licensePlate: "ou908mm",
-    brand: "toyota",
-    color: "grise",
-    transmission: "auto",
-    owner: "paul",
+    matricule: "ou908mm",
+    marque: "toyota",
+    couleur: "grise",
+    type_moteur: "auto",
+    nom_chauffeur: "paul",
     model: "corolla"
   },
   {
-    licensePlate: "no1212u",
-    brand: "citroen",
-    color: "", // Pas de couleur spécifiée
-    transmission: "Ndi", // Type de transmission
-    owner: "Ndi",
+    matricule: "no1212u",
+    marque: "citroen",
+    couleur: "", // Pas de couleur spécifiée
+    type_moteur: "Ndi", // Type de type_moteur
+    nom_chauffeur: "Ndi",
     model: ""
   },
   {
-    licensePlate: "es0012u",
-    brand: "citroen",
-    color: "noir",
-    transmission: "semi-auto",
-    owner: "John",
+    matricule: "es0012u",
+    marque: "citroen",
+    couleur: "noir",
+    type_moteur: "semi-auto",
+    nom_chauffeur: "John",
     model: ""
   }
 ];

@@ -1,6 +1,6 @@
 export interface VehicleTransaction {
-  licensePlate: string;      // Plaque d'immatriculation
+  matricule: string;      // Plaque d'immatriculation
   date: string;              // Date de la transaction
-  owner: string;             // Propriétaire
-  amounts: number[];         // Liste des montants
+  nom_chauffeur: string;             // Propriétaire
+  list_montant: number[];         // Liste des montants
 }

@@ -1,8 +1,8 @@
 export interface Vehicle {
-  licensePlate: string;  // Plaque d'immatriculation
-  brand: string;         // Marque
-  color?: string;        // Couleur (optionnel)
-  transmission: string;  // Type de transmission
-  owner: string;         // Propriétaire
-  model: string;         // Modèle
+  matricule: string;
+  marque: string;
+  couleur?: string;        // Couleur (optionnel)
+  type_moteur: string;
+  nom_chauffeur: string;
+  model: string;      
 }
