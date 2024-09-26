@@ -1,0 +1,7 @@
+{
+  "name": "tp1_jubi_auto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
