@@ -1,6 +1,6 @@
-import { Vehicle } from "../model/model_vehicule";
+import { Vehicule } from "../model/model_vehicule";
 
-export const vehicles: Vehicle[] = [
+export const vehicules: Vehicule[] = [
   {
     matricule: "lt0998c",
     marque: "renault",

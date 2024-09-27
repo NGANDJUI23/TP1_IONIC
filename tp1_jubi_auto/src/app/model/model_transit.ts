@@ -1,4 +1,4 @@
-export interface VehicleTransaction {
+export interface VehiculeTransaction {
   matricule: string;      // Plaque d'immatriculation
   date: string;              // Date de la transaction
   nom_chauffeur: string;             // Propriétaire

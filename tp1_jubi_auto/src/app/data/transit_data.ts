@@ -1,6 +1,6 @@
-import { VehicleTransaction } from "../model/model_transit";
+import { VehiculeTransaction } from "../model/model_transit";
 
-export const transactions: VehicleTransaction[] = [
+export const transactions: VehiculeTransaction[] = [
   {
     matricule: "lt0998c",
     date: "2023-02-20",

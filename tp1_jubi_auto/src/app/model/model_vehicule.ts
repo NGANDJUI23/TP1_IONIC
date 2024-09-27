@@ -1,4 +1,4 @@
-export interface Vehicle {
+export interface Vehicule {
   matricule: string;
   marque: string;
   couleur?: string;        // Couleur (optionnel)
