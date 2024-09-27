@@ -9,6 +9,7 @@ import { vehicules } from 'src/app/data/vehicule_data';
 export class DashboardServiceService {
   list_vehicule = vehicules;
   list_transaction = transactions;
+  
   constructor() { }
 
   nombre_total_vente_ticket(): number {
@@ -17,19 +18,44 @@ export class DashboardServiceService {
     return nbre;
   }
 
-  trajet_max_revenue(): number[] {
-    let max = 0;
-    let index_max = 0;
-    let somme = 0;
-    this.list_transaction.forEach((transaction, index) => {
-      transaction.list_montant.forEach((montant) => somme = somme + montant)
-      if (somme > max) {
-        max = somme;
-        index_max = index;
+  trajet_max_revenue() {
+    let max = 0
+    let somme = 0
+    let montant_max1 = 0;
+    let montant_max2 = 0;
+    let nom_trajet_max_1 = '';
+    let nom_trajet_max_2 = ''
+    let list_trajet: string[] = [];
+    this.list_transaction.forEach(transaction => {
+      if (!(list_trajet.includes(transaction.nom_trajet))) {
+        list_trajet.push(transaction.nom_trajet);
       }
-      somme = 0;
     })
-    return [index_max, somme];
+    list_trajet.forEach(nom_trajet => {
+      this.list_transaction.forEach(transact => {
+        if (transact.nom_trajet == nom_trajet) {
+          transact.list_montant.forEach(montant => {
+            somme = somme + montant;
+          })
+        }
+      })
+      if (somme > max) {
+        montant_max2 = max;
+        nom_trajet_max_2 = nom_trajet_max_1;
+        max = somme;
+        nom_trajet_max_1 = nom_trajet;
+      }
+    })
+    return [
+      {
+        "Libelle": nom_trajet_max_1,
+        "Montant_obtenu" : max
+      },
+      {
+        "Libelle": nom_trajet_max_2,
+        "Montant_obtenu": montant_max2
+      }
+    ]
   }
   
   liste_chauffeur() {
